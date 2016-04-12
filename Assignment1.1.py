@@ -1,4 +1,4 @@
-BOOK_TAX = 7.5
+BOOK_TAX = .075
 SHIPPING_OF_BOOKS = 2.0
 
 values=[]
