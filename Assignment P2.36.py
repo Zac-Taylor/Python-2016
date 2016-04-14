@@ -1,11 +1,11 @@
-balance= input("Please enter your current balance:" + " " )
+balance= input("Please enter your current balance: ")
 currentBalance =float(balance)
 
-principle= input("Please enter your current principle:" + " ")
+principle= input("Please enter your current principle: ")
 currentPrinciple = float(principle)/100
 
-years = input("How many years are on the account?" + " ")
-amountYears = float(years)
+years = input("How many years are on the account? ")
+amountYears = int(years)
 
 yearBalance = (currentBalance * amountYears)*1
 
