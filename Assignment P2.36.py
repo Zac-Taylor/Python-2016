@@ -1,28 +1,22 @@
-balance= input("Please enter your current balance: ")
-currentBalance =float(balance)
+balance=float(input("Please enter your balance: "))
 
 principle= input("Please enter your current principle: ")
 currentPrinciple = float(principle)/100
 
-years = input("How many years are on the account? ")
-amountYears = int(years)
+years=int(input("Please enter amount of years: "))
 
-yearBalance = (currentBalance * amountYears)*1
+months = (1/12) * 1/years
 
-newBalance = (currentBalance * currentPrinciple)/12
+firstMonthBalance = (balance * currentPrinciple * months) + balance
+print(firstMonthBalance)
 
-newCurrentBalance = newBalance + currentBalance
+secondMonthBalance = (firstMonthBalance * currentPrinciple * months) + firstMonthBalance
+print(secondMonthBalance)
 
-realCurrentBalance = (newCurrentBalance * currentPrinciple)/12
+thirdMonthBalance = (secondMonthBalance * currentPrinciple * months) + secondMonthBalance
+print(thirdMonthBalance)
+   
+   
 
-secondCurrentBalance= realCurrentBalance + newCurrentBalance
-
-nowBalance = (secondCurrentBalance * currentPrinciple)/12
-
-thirdCurrentBalance = (nowBalance+secondCurrentBalance)
-
-print("Your first month balance is:" + " ",newCurrentBalance)
-print("Your second month balance is:" + " ",secondCurrentBalance)
-print("Your third month balance is:" + " ",thirdCurrentBalance)
     
     
