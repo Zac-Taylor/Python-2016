@@ -12,10 +12,10 @@ firstMonthBalance = (balance * currentPrinciple * months) + balance
 print(firstMonthBalance)
 
 secondMonthBalance = (firstMonthBalance * currentPrinciple * months) + firstMonthBalance
-print(secondMonthBalance)
+print(format(secondMonthBalance,'.2f'))
 
 thirdMonthBalance = (secondMonthBalance * currentPrinciple * months) + secondMonthBalance
-print(thirdMonthBalance)
+print(format (thirdMonthBalance,'.2f'))
    
    
 
