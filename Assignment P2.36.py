@@ -5,6 +5,7 @@ currentPrinciple = float(principle)/100
 
 years=int(input("Please enter amount of years: "))
 
+#Converting Years into months
 months = (1/12) * 1/years
 
 firstMonthBalance = (balance * currentPrinciple * months) + balance
