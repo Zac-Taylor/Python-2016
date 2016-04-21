@@ -1,3 +1,5 @@
+#Zachary Taylor's Code 4/13/16 IST 282
+
 balance=float(input("Please enter your balance: "))
 
 principle= input("Please enter your current principle: ")
