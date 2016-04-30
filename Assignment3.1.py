@@ -1,8 +1,5 @@
 
-inputUser = input("How many numbers do you want to enter: ")
-userNum = int(inputUser)
+inputUser = input("Enter you numbers here:")
+userNum = [int(i) for i in inputUser.split()]
 
-for loop in range(userNum):
-    values.append(float(input("Enter your number: ")))
-
-print("The minumim number is",min(values),"and the lenth of numbers is:",len(values))
+print("The minumim number is",min(userNum),"and the lenth of numbers is:",len(userNum))
