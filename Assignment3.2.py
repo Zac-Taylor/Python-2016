@@ -7,4 +7,4 @@ userNum = int(inputUser)
 for loop in range(userNum):
     values.append(float(input("Enter your number: ")))
 
-print(sum(values)/len(values), sum(values))
+print("The average is ",sum(values)/len(values),"The sum is", sum(values))
