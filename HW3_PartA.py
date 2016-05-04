@@ -8,7 +8,7 @@ inputStr=input("Enter an integer or empty string to end: ")
 while inputStr != "":
     value = int(inputStr)
     if value < smallest:
-        smalledt = value
+        smallest = value
     count = count + 1
     inputStr=input("Enter an integer or empty string to end: ")
 print("the smallest is: ",smallest)
