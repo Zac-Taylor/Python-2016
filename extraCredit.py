@@ -7,11 +7,11 @@ count = 0
 
 grade = float(input("Enter Your score or -1 to end: "))
 while grade != -1:
-    if grade > 90:
+    if grade >= 90:
         numA = numA + 1
-    elif grade > 80:
+    elif grade >= 80:
         numB = numB + 1
-    elif grade > 70:
+    elif grade >= 70:
         numC = numC + 1
     else:
         numF = numF + 1
