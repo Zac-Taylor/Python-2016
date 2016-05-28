@@ -1,4 +1,4 @@
-smallest= 0
+smallest= 0x
 count = 0
 
 smallest = int(input("Enter an integer or empty string to end: "))
