@@ -26,8 +26,13 @@ def main():
     average = sum/num_score
     
     #median = find_median (score)
-    median = (100 + 68)//2
-
+    srt= sorted(score)
+    mid = num_score//2
+    if num_score %2:
+        median = srt[mid]
+    else:
+        med = (srt[mid] + srt[mid-1]) / 2
+        median = med
     #lowest = find_lowest (score)
     lowest = score[0]
     for n in score:
