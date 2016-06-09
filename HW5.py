@@ -1,71 +1,52 @@
-#HW5 part a example kind
-
-
-class Pizza():   #create class then constructor
-    def __init__(self, brand, size, numT, price, ):   #constructor
-        self._brandName = brand    #attribute
+class Pizza():
+    def __init__(self,brand,size, numT):
+        self._brandName = brand
         self._size = size
         self._numTopping = numT
-        self._price = price
 
-        self.calculate_cost()
-
-
-
-    #get methods 1 for each attribute same for set method; encapsulation
+    def set_brandName(self, brand):
+        self._brandName = brand
+    def set_size (self, size):
+      self._size = size
+    def set_numTopping (self, numT):
+        self._numTopping = numT
 
     def get_brandName(self):
-        return self._brandName
-
+      return self_brandName
     def get_size(self):
-        return self._brandName
+        return self._size
+    def get_numTopping(self):
+      return self.numTopping
 
-    def get_numT(self):
-        return self._numT
-
-    def get_price(self):
-        return self._price
-
-    def calculate_cost(self):
-        if self._brandName == "Pizza Hut":
-            if  self._size == "small":
-                self._price = 10 + (1 * self._numTopping)
-            else:
-                self._price = 14 + (3 * self._numTopping)
-        else:
-            if  self._size == "small":
-                self._price = 12 + (2 * self._numTopping)
-            else:
-                self._price = 16 + (3 * self._numTopping)
-
-    #set method
-    def set_brandName(self, name):
-        self._brandName = name
-
-    def set_size(self, size):
-        self._size = size
-
-    def set_numT(self, toppings):
-        self._numT = toppings
-
-    def set_price(self, cost):
-            self._price = cost
-
-       
+    def calculateCost(self):
+      cost = 0
+      if self._brandName == "Pizza Hut":
+            if self._size =="Small":
+                cost = 10 + (1 * self._numTopping)
+            elif self._size == "Large":
+                cost = 14 + (3 * self._numTopping)
+              
+      if self._brandName == "Dominos":
+            if self._size == "Small":
+                cost = 12 + (2 * self._numTopping)
+            elif self._size == "Large":
+                cost = 16 + (3 * self._numTopping)              
+      return float(cost)
 
     def __str__(self):
-        return self._brandName + " " + self._size + " Pizza"\
-        " " + str(self._numTopping) + " " +"Cost is " + str(self._price)
+      return self._brandName + "; " + self._size + " "\
+            "Cost is: $" + str(self.calculateCost())
 
-def main():
-    print ("first line")
-
-    p1 = Pizza("Pizza Hut", "small", 3, 12.50) #create object type: pizza p1 is refernce var
-
-    p2 = Pizza("Dominos", "large", 2, 13.99)
-
-    print(p1)
-    print(p2)
+    def main():
+        p1 = Pizza("Pizza Hut","Small",3)
+        p2 = Pizza("Dominos","Large",2)
+        print("Your pizza is:", p1)
+        print("Your pizza is:", p2)
+ 
+    main()
+      
 
     
-main()
+
+    
+        
