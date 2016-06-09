@@ -62,7 +62,7 @@ def main():
 
     p1 = Pizza("Pizza Hut", "small", 3, 12.50) #create object type: pizza p1 is refernce var
 
-    p2 = Pizza("Dominos", "large", 5, 13.99)
+    p2 = Pizza("Dominos", "large", 2, 13.99)
 
     print(p1)
     print(p2)
